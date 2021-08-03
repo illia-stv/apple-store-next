@@ -1,0 +1,165 @@
+
+
+.theme-light {
+    --color-primary: #0060df;
+    --color-secondary: #fbfbfe;
+    --color-accent: #fd6f53;
+    --font-color: #222;
+    --background-color: #fbfbfd;
+    --border-color: #eee;
+  }
+  .theme-dark {
+    --color-primary: #17ed90;
+    --color-secondary: #2a2c2d;
+    --color-accent: #12cdea;
+    --font-color: #ddd;
+    --border-color: #333;
+    --background-color: #000;
+  }
+
+.product-page{
+    margin: 0px 0 0;
+}
+
+
+.product-page-img{
+    /* width: 276px;
+    height: 167px; */
+    /* border: 1px solid black; */
+    margin: 0 10px;
+
+
+    /* background: url('../assets/images/product\ page/macbookair.png') center/100% 100% no-repeat; */
+}
+
+
+.product-page_title{
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: var(--font-color);
+    text-align: center;
+    margin: 90px 0 0;
+    padding: 100px 0 0;
+}
+
+
+.product-page_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1000px;
+    height: min-content;
+    /* border: 1px solid #ddd; */
+    margin: 100px auto 50px;
+}
+
+.product-page_flex_product{
+    width: 300px;
+    /* border: 1px solid black; */
+
+}
+
+.product-page_flex_product_title{
+    font-size: 23px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: var(--font-color);
+    text-align: center;
+    margin: 50px 0 10px;
+}
+
+.product-page_flex_product_under-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--font-color);
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+
+.product-page_flex_product_desc{
+    margin: 20px 0 0;
+    border-top: 1px solid var(--border-color);
+    
+}
+
+.product-page-img_block{
+    width: min-content;
+    /* border: 1px solid black; */
+    /* -webkit-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.61); 
+box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.61); */
+border-radius: 25px;
+    margin: 0 auto;
+}
+
+.product-page_flex_product_desc p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--font-color);
+    /* white-space: nowrap; */
+    /* width: min-content; */
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+    line-height: 2;
+    padding: 20px 0;
+}
+
+
+.product-page_flex_product_buy{
+    background: rgb(30, 120, 211);
+    /* padding: 5px; */
+    white-space: nowrap;
+    width: min-content;
+    color: white;
+    font-size: 11px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    margin: 25px auto 35px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+
+.product-page_flex_product_buy:active{
+    font-size: 13px;
+}
+
+.product-page_flex_product_buy:hover{
+    background-color:#68b4ff ;
+}
+
+
+
+.product-page_flex_product_buy button{
+    background-color:transparent;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    white-space: nowrap;
+    color: white;
+    font-size: 11px;
+    padding: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    .product-page_flex{
+        flex-direction: column;
+        width: min-content;
+        margin: 50px auto 20px;
+    }
+
+    .product-page_flex_product{
+        /* border-bottom: 1px solid #eee; */
+        margin: 0 0 40px;
+    }
+
+    .product-page_title{
+        font-size: 35px;
+    }
+}
